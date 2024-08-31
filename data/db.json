@@ -1,0 +1,81 @@
+{
+  "User": [
+    {
+      "id": "amadichile2@gmail.com",
+      "fullName": "Amadi blue",
+      "gender": "male",
+      "terms": true,
+      "password": "00000000Hh1&",
+      "role": "normal"
+    },
+    {
+      "id": "amadichile3@gmail.com",
+      "fullName": "Amadi blue",
+      "gender": "male",
+      "terms": true,
+      "password": "00000000Hh1&",
+      "role": "admin"
+    },
+    {
+      "id": "amadichile1@gmail.com",
+      "gender": "male",
+      "role": "normal",
+      "fullName": "Amadi blue",
+      "password": "00000000Hh1&",
+      "terms": true
+    },
+    {
+      "id": "amadichile4@gmail.com",
+      "gender": "male",
+      "role": "normal",
+      "fullName": "Amadi blue",
+      "password": "00000000Hh1&",
+      "terms": true
+    },
+    {
+      "id": "amadichile5@gmail.com",
+      "gender": "male",
+      "role": "normal",
+      "fullName": "Amadi blue",
+      "password": "00000000Hh1&",
+      "terms": true
+    }
+  ],
+  "Blog": [
+    {
+      "id": "1",
+      "title": "SPA",
+      "intro": "Understand how reacr SPA work",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita perspiciatis voluptates ducimus tenetur est excepturi enim repellendus, adipisci qui dolores quis nesciunt aut officiis eos porro sunt veritatis iusto velit.",
+      "author": "Amadi chile"
+    },
+    {
+      "id": "2",
+      "title": "What is react",
+      "intro": "Understand how react  work",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita perspiciatis voluptates ducimus tenetur est excepturi enim repellendus, adipisci qui dolores quis nesciunt aut officiis eos porro sunt veritatis iusto velit.",
+      "author": "Amadi blue"
+    },
+    {
+      "id": "3",
+      "title": "React hooks",
+      "intro": "Understand how reacyt hooks  work",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita perspiciatis voluptates ducimus tenetur est excepturi enim repellendus, adipisci qui dolores quis nesciunt aut officiis eos porro sunt veritatis iusto velit.",
+      "author": "Amadi black"
+    },
+    {
+      "id": "a7b6",
+      "title": "How to boi rice",
+      "intro": "learn five simple steps",
+      "author": "Amadi blue",
+      "body": "body"
+    },
+    {
+      "id": "85ab",
+      "title": "How to buy rice",
+      "intro": "learn five simple steps",
+      "author": "Amadi blue",
+      "body": "content"
+    }
+  ]
+}

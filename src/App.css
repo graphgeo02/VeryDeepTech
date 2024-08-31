@@ -1,0 +1,62 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+body {
+ 
+  /* min-width: 320px; */
+  min-height: 100vh;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 0.5rem 2rem;
+  
+ 
+}
+
+body, html, #root, .app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html{
+  font-size: 1.2em;
+ 
+}
+
+
+h1 {
+  font-size: 2.1em;
+  line-height: 1.1;
+}
+
+
+
+   /* App.css */
+.main-content {
+  margin: auto;
+  width: 90%; /* Example width, adjust as needed */
+  max-width: 1200px; /* Example max-width, adjust as needed */
+  padding: 10px; /* Example padding, adjust as needed */
+}
+
+ 
+
+
+
+ 
+
+
+
+
+
+ 

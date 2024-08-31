@@ -1,0 +1,22 @@
+@import '../scss/extend.scss';
+@import '../scss/include.scss';
+
+
+#Blogs{
+   .content{
+    @include flex_center();
+    gap: 1rem; 
+    .blogs{
+        @include flex_center();
+        @extend .shadow;
+        @extend .spacing;
+        width: 60%;
+        border-left: 2px solid transparent;
+        &:hover{
+            border-left: 2px solid purple;
+            cursor: pointer;
+        }
+    }
+   }
+
+}

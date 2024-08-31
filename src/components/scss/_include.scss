@@ -1,0 +1,16 @@
+@mixin grid($num){
+    display: grid;
+    grid-template-columns: repeat($num, 1fr);
+}
+
+@mixin flexible_grid(){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minMax(200px, 1fr));
+}
+
+@mixin flex_center(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

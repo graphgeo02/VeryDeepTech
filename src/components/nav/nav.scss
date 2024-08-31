@@ -1,0 +1,56 @@
+@import '../scss/extend.scss';
+@import '../scss/include.scss';
+
+// #Nav {
+//     background-color: black;
+//     @extend .spacing; //padding of 0.5rem 1rem
+//     box-sizing: border-box;
+//     min-height: 5vh;
+//     border-radius: unset;
+//     width:100vw;
+  
+
+
+//     ul{
+//         @include flexible_grid();
+//        place-items: center;
+//        gap: 1rem;
+//        li{
+//         a{
+//             color: white;
+//             text-decoration: none;
+//             &:hover{
+//                 color: rgb(200, 10, 48);
+//                 text-decoration: underline;
+               
+//             }
+//         }
+//        }
+//     }
+// }
+
+#Nav {
+    background-color: black;
+    min-height: 5vh;
+    @extend .spacing;
+    border-radius: unset;
+    ul{
+        @include flexible_grid();
+        place-items: center;
+       //@include grid(3);
+       gap: 1rem;
+       li{
+        a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            &:hover{
+                color: crimson;
+                text-decoration: underline;
+            }
+        }
+       }
+    }
+}
+
+
