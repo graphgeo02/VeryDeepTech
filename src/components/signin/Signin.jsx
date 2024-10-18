@@ -11,7 +11,8 @@ import { memo } from 'react';
 import { useMemo } from 'react';
 import { useCallback } from 'react';
 import useTransition from 'react-transition-state';
-import { Link } from 'react-router-dom';  
+import { Link } from 'react-router-dom'; 
+import './signin.css'; 
 const Schema = Yup.object().shape({
     email: Yup.string().email('Invalid email').required('Required'),
     password: Yup.string().min(8, "Must Contain 8 Characters").required()
@@ -34,9 +35,10 @@ const Schema = Yup.object().shape({
 
     return (
       
-<div align='center'>
-  <Blognav />
-    <h1>Signin</h1>
+     <>
+       <Blognav />
+<div className="signin-container" >
+    <h1  className="signin-title">Signin</h1>
     <Formik
       initialValues={{
         email: '',
@@ -81,26 +83,26 @@ const Schema = Yup.object().shape({
       }}
     >
       {({ errors, touched }) => (
-        <Form>
-            <fieldset>
+        <Form className="signin-form">
+            <div className="form-group">
           <label htmlFor='email'>Email: </label>
-          <Field name="email" id='email'/>
+          <Field type="email" name="email" id='email'/>
           {touched.email && errors.email && <div>{errors.email}</div>}
-            </fieldset>
-            <fieldset>
+            </div>
+            <div className="form-group">
           <label htmlFor='password'>Password: </label>
           <Field type='password'name="password" id='password'/>
           {touched.password && errors.password && <div>{errors.password}</div>}
-            </fieldset>
+            </div>
             
-          <button type="submit">Submit</button>
+          <button type="submit" className="signin-btn">Submit</button>
              
-          {" "}{ isPending && <span>Please Signin. Dont have account? <Link to='/signup'>Signup</Link></span>}   
+          {" "}{ isPending && <span className="signin-pending">Please Signin. Dont have account? <Link to='/signup'>Signup</Link></span>}   
           </Form>
       )}
     </Formik>
   </div>
-
+</>
     )
 }
     

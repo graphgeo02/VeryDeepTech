@@ -29,24 +29,25 @@
 //     }
 // }
 
-#Nav {
-    background-color: black;
-    min-height: 5vh;
-    @extend .spacing;
-    border-radius: unset;
+#Nav{
+    background-color: black !important ;
+    min-height: 5vh !important;
+    @extend .spacing ;
+    border-radius: unset !important;
     ul{
-        @include flexible_grid();
-        place-items: center;
+        @include flexible_grid() ;
+        place-items: center !important;
        //@include grid(3);
-       gap: 1rem;
-       li{
+       gap: 1rem !important;
+       
+       li{ 
         a{
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
+            color: white !important;
+            font-weight: bold !important  ;
+            text-decoration: none!important;
             &:hover{
-                color: crimson;
-                text-decoration: underline;
+                color: crimson !important;
+                text-decoration: underline !important;
             }
         }
        }

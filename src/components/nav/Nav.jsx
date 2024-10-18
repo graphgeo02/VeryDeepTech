@@ -10,6 +10,7 @@ import { atomCart } from '../../atomcart/atom'
 
 const Nav = () => {
     let cart = useRecoilValue(atomCart);
+    let count = useRecoilState(atomCart)
   return <div id="Nav">
         <ul>
             {/*Route step 3*/}
@@ -46,9 +47,17 @@ const Nav = () => {
                 })
 
                 }
-                    <Link to="/cart">
-                       Cart [{cart}]
-                    </Link>   
+                    <Link   style={{ backgroundColor: '#333', color: '#fff', padding: '5px 10px', borderRadius: '50%'}} to="/cart">
+                       Cart [{cart.length}]
+                       Count ({count})
+                    </Link>  
+                    
+                    
+  
+   
+    
+  
+
         </ul>
       
     </div>

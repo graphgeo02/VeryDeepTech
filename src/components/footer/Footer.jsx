@@ -2,20 +2,46 @@ import React from 'react'
 import './footer.scss'
 const Footer = () => {
   return (
-    <div  style ={{paddingLeft:'6%'}} id='Footer'>
-      <br></br>
-      <h1>Let's Connect</h1>
-      <p>Thank you for visiting my portfolio. 
-        If you have any questions, want to collaborate, or just want to say hello, feel free to reach out.
-      </p>
-      <ul>
-        <li>Email:graphgeo02@gmail.com</li>
-        <li>Linkedin: www.linkedin.com/in/abdullahi-abdulkadir-550b1a114</li>
-        <li>GitHub:github.com/graphgeo02</li>
-      </ul>
-      <br></br>
-      <p>© 2024 Abdullahi. All Rights Reserved.</p>
+    
+<>
+<div className="flex footer">
+                <ul>
+                    <h1>Company</h1>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Service</li>
+                </ul>
+                <ul>
+                    <h1>Products</h1>
+                    <li>Front-end Web Development </li>
+                    <li>Web Maintenance</li>
+                    <li>Website Optimization</li>
+                </ul>
+    
+                <ul>
+                    <h1>Stacks</h1>
+                    <li>Html/Css/Sass</li>
+                    <li>Javascript/React</li>
+                    <li>UI/Figma</li>
+                </ul>
+                <ul>
+                    <h1>Support</h1>
+                    <li>Help</li>
+                    <li>QA</li>
+                    <li>Contact</li>
+                </ul>   
+                
+                
+   
+    
+                 
     </div>
+    
+      <div className="copyright">
+        {/* <span>&#169; All right reserve 2025 Abdullahi A</span> */}
+      </div>
+</>
+            
    
   )
 }

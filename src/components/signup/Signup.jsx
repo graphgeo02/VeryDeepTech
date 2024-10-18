@@ -12,6 +12,7 @@ import { useMemo } from 'react';
 import { useCallback } from 'react';
 import { useTransition } from 'react';
 import debounce from 'debounce';
+import '../signup/signup.css'
 const Schema = Yup.object().shape({
     email: Yup.string().email('Invalid email').required('Required'),
     fullName: Yup.string().min(2, 'Too Short!').required('Required'),
@@ -52,10 +53,10 @@ const Schema = Yup.object().shape({
   let [isPending, startTransition] = useTransition(false);
     console.log('submit form ') //debugger
     return (
-      
-<div align='center'>
-  <Blognav />
-    <h1>Signup</h1>
+    <> 
+    <Blognav /> 
+<div className="signup-container">
+  <h1  className="signup-title">Signup</h1>
     <Formik
       initialValues={{
         fullName: '',
@@ -122,24 +123,24 @@ const Schema = Yup.object().shape({
       }}
     >
       {({ errors, touched }) => (
-        <Form>
-            <fieldset>
+        <Form className="signup-form">
+            <div className="form-group">
           <label htmlFor='fullName'>Full Name: </label>
-          <Field name="fullName" id='fullName'/>
+          <Field type="text" name="fullName" id='fullName'/>
           {touched.fullName && errors.fullName && <div>{errors.fullName}</div>}
-            </fieldset>
-            <fieldset>
+            </div>
+            <div className="form-group">
           <label htmlFor='password'>Password: </label>
           <Field type='password'name="password" id='password'/>
           {touched.password && errors.password && <div>{errors.password}</div>}
-            </fieldset>
-            <fieldset>
+            </div>
+            <div className="form-group">
           <label htmlFor='email'>Email: </label>
-          <Field name="email" id='email'/>
+          <Field type="email" name="email" id='email'/>
           {touched.email && errors.email && <div>{errors.email}</div>}
-            </fieldset>
+            </div>
 
-            <fieldset role="group" aria-labelledby="gender-group">
+            <div className="form-group radio-group" role="group" aria-labelledby="gender-group">
                 <span>Gender: </span>
             <label>
               <Field type="radio" name="gender" value="male" />
@@ -150,21 +151,24 @@ const Schema = Yup.object().shape({
               Female
             </label>
           {touched.gender && errors.gender && <div>{errors.gender}</div>}
-            </fieldset>
-            <fieldset>
+            </div>
+            <div className="form-group checkbox-group">
           <label htmlFor='terms'>Terms: </label>
           <Field type='checkbox' name="terms" id='terms'/>
           {touched.terms && errors.terms && <div>{errors.terms}</div>}
-            </fieldset>
-          <button type="submit">Submit</button>{" "}
+            </div>
+          <button  className="signup-btn" type="submit">Submit</button>{" "}
            { isPending && ("Signup successfully")}
         </Form>
       )}
     </Formik>
+  
+   
   </div>
-
+</>
     )
 }
     
   export default React.memo(Signup);
 
+  

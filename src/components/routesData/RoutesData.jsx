@@ -32,21 +32,21 @@ export const AppRoutes = [
 
       }
       ,
-               {
-       id : id++,
-       path: '/about'    ,
-       component:<About />  ,
-       navName: 'About'
+//                {
+//        id : id++,
+//        path: '/about'    ,
+//        component:<About />  ,
+//        navName: 'About'
 
-      }
+//       }
       ,
-               {
-       id : id++,
-       path: '/portpolio'    ,
-       component: <Portpolio /> ,
-       navName: 'Portpolio'
+//                {
+//        id : id++,
+//        path: '/portpolio'    ,
+//        component: <Portpolio /> ,
+//        navName: 'Portpolio'
 
-      }
+//       }
       ,
                {
        id : id++,
@@ -87,20 +87,20 @@ export const AppRoutes = [
        navName: 'null'
 
       },
-             {
-       id : id++,
-       path: '/hooks'    ,
-       component: <Hooks /> ,
-       navName: 'Hooks'
+//              {
+//        id : id++,
+//        path: '/hooks'    ,
+//        component: <Hooks /> ,
+//        navName: 'Hooks'
 
-      },
-      //        {
-      //  id : id++,
-      //  path: '/cart'    ,
-      //  component: <Cart /> ,
-      //  navName: 'Cart'
+//       },
+//              {
+//        id : id++,
+//        path: '/cart'    ,
+//        component: <Cart /> ,
+//        navName: 'Cart'
 
-      // }
+//       }
       
 ]
 

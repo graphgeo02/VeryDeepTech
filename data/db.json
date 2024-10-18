@@ -1,14 +1,6 @@
 {
   "User": [
     {
-      "id": "amadichile2@gmail.com",
-      "fullName": "Amadi blue",
-      "gender": "male",
-      "terms": true,
-      "password": "00000000Hh1&",
-      "role": "normal"
-    },
-    {
       "id": "amadichile3@gmail.com",
       "fullName": "Amadi blue",
       "gender": "male",
@@ -17,23 +9,15 @@
       "role": "admin"
     },
     {
-      "id": "amadichile1@gmail.com",
-      "gender": "male",
-      "role": "normal",
-      "fullName": "Amadi blue",
-      "password": "00000000Hh1&",
-      "terms": true
-    },
-    {
-      "id": "amadichile4@gmail.com",
-      "gender": "male",
-      "role": "normal",
-      "fullName": "Amadi blue",
-      "password": "00000000Hh1&",
-      "terms": true
-    },
-    {
       "id": "amadichile5@gmail.com",
+      "gender": "male",
+      "role": "normal",
+      "fullName": "Amadi blue",
+      "password": "00000000Hh1&",
+      "terms": true
+    },
+    {
+      "id": "amadichile2@gmail.com",
       "gender": "male",
       "role": "normal",
       "fullName": "Amadi blue",
